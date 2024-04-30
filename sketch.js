@@ -10,7 +10,7 @@ function preload() {
 function setup() {
   createCanvas(1000, 600);
 
-  points = font.textToPoints("GUM", 30, 300, 280, {
+  points = font.textToPoints("gum", 30, 300, 280, {
     sampleFactor: 0.2,
     simplifyThreshold: 0,
   });
@@ -28,7 +28,7 @@ function draw() {
       10,
       10
     );
-    fill('pink');
+    fill("pink");
   }
   angle += 10;
 }

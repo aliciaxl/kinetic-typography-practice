@@ -28,6 +28,7 @@ function draw() {
       10,
       10
     );
+    fill('pink');
   }
   angle += 10;
 }

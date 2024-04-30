@@ -10,8 +10,8 @@ function preload() {
 function setup() {
   createCanvas(1000, 600);
 
-  points = font.textToPoints("FLO", 30, 300, 280, {
-    sampleFactor: 0.3,
+  points = font.textToPoints("GUM", 30, 300, 280, {
+    sampleFactor: 0.2,
     simplifyThreshold: 0,
   });
   print(points);
@@ -23,11 +23,11 @@ function draw() {
   background(0);
   for (let i = 0; i < points.length; i++) {
     ellipse(
-      points[i].x + r * sin(angle + i * 30),
-      points[i].y + sin(angle + i * 60),
+      points[i].x + r * sin(angle - i * 20),
+      points[i].y + r * sin(angle - i * 30),
       10,
       10
     );
   }
-  angle += 6;
+  angle += 10;
 }
